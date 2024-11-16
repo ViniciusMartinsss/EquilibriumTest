@@ -1,0 +1,218 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<nav class="navbar">
+    <div class="logo">Equilibrium</div>
+    <div class="menu-toggle" (click)="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links" [class.active]="isMenuOpen">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#programs" class="nav-link">Programas</a>
+        <a href="#trainers" class="nav-link">Equipe</a>
+        <a href="#pricing" class="nav-link">Preços</a>
+        <a href="#contact" class="cta-button">Agende uma Aula</a>
+    </div>
+</nav>
+
+<header id="home" class="hero">
+    <h1>Transforme seu corpo e mente</h1>
+    <p>Na Equilibrium, você encontra o equilíbrio perfeito entre saúde física e bem-estar mental</p>
+    <button class="primary-button">Comece Hoje</button>
+</header>
+
+<section id="programs" class="programs">
+    <h2>Nossos Programas</h2>
+    <div class="programs-grid">
+        <div class="program-card">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Musculação">
+            <h3>Musculação</h3>
+            <p>Programas personalizados para seus objetivos</p>
+        </div>
+        <div class="program-card">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a" alt="Crossfit">
+            <h3>Crossfit</h3>
+            <p>Treinos intensos e funcionais</p>
+        </div>
+        <div class="program-card">
+            <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0" alt="Yoga">
+            <h3>Yoga</h3>
+            <p>Equilíbrio entre corpo e mente</p>
+        </div>
+    </div>
+</section>
+
+<section id="trainers" class="trainers">
+    <h2>Nossa Equipe</h2>
+    <div class="trainers-grid">
+        <div class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b" alt="Personal Trainer">
+            <h3>Ricardo Silva</h3>
+            <p>Especialista em Musculação</p>
+        </div>
+        <div class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Instrutora de Yoga">
+            <h3>Amanda Santos</h3>
+            <p>Instrutora de Yoga</p>
+        </div>
+        <div class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61" alt="Coach Crossfit">
+            <h3>Carlos Oliveira</h3>
+            <p>Coach de Crossfit</p>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="pricing">
+    <div class="pricing-header">
+        <h2>Planos e Preços</h2>
+        <p>Escolha o plano ideal para seus objetivos</p>
+    </div>
+    <div class="pricing-grid">
+        <div class="price-card">
+            <div class="card-header">
+                <span class="plan-tag">Básico</span>
+                <h3>Plano Essencial</h3>
+                <div class="price">
+                    <span class="currency">R$</span>
+                    89,90
+                    <span class="period">/mês</span>
+                </div>
+            </div>
+            <ul class="features-list">
+                <li><i class="fas fa-check"></i> Acesso à musculação</li>
+                <li><i class="fas fa-check"></i> Horário comercial</li>
+                <li><i class="fas fa-check"></i> Avaliação mensal</li>
+                <li><i class="fas fa-check"></i> App de treinos</li>
+                <li class="disabled"><i class="fas fa-times"></i> Personal trainer</li>
+                <li class="disabled"><i class="fas fa-times"></i> Aulas de Yoga</li>
+            </ul>
+            <button class="secondary-button" (click)="scrollToContact()">
+                <span>Começar agora</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="price-card featured">
+            <div class="popular-tag">Mais Popular</div>
+            <div class="card-header">
+                <span class="plan-tag">Premium</span>
+                <h3>Plano Completo</h3>
+                <div class="price">
+                    <span class="currency">R$</span>
+                    149,90
+                    <span class="period">/mês</span>
+                </div>
+            </div>
+            <ul class="features-list">
+                <li><i class="fas fa-check"></i> Acesso total às aulas</li>
+                <li><i class="fas fa-check"></i> Horário 24h</li>
+                <li><i class="fas fa-check"></i> Personal trainer</li>
+                <li><i class="fas fa-check"></i> Aulas de Yoga</li>
+                <li><i class="fas fa-check"></i> App de treinos</li>
+                <li><i class="fas fa-check"></i> Área de spa</li>
+            </ul>
+            <button class="primary-button" (click)="scrollToContact()">
+                <span>Começar agora</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="price-card">
+            <div class="card-header">
+                <span class="plan-tag">Família</span>
+                <h3>Plano Familiar</h3>
+                <div class="price">
+                    <span class="currency">R$</span>
+                    249,90
+                    <span class="period">/mês</span>
+                </div>
+            </div>
+            <ul class="features-list">
+                <li><i class="fas fa-check"></i> Até 3 pessoas</li>
+                <li><i class="fas fa-check"></i> Acesso total</li>
+                <li><i class="fas fa-check"></i> Horário 24h</li>
+                <li><i class="fas fa-check"></i> Nutricionista</li>
+            </ul>
+            <button class="secondary-button" (click)="scrollToContact()">
+                <span>Começar agora</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="virtual-tour">
+    <div class="tour-header">
+        <h2>Conheça Nossa Academia</h2>
+        <p>Faça um tour virtual e conheça nossas instalações modernas e equipamentos de última geração</p>
+    </div>
+
+    <div class="tour-container">
+        <div class="tour-info">
+            <ul class="feature-list">
+                <div>
+                    <li><i class="fas fa-dumbbell"></i> Área de musculação com equipamentos modernos</li>
+                    <li><i class="fas fa-heart"></i> Área de cardio climatizada</li>
+                </div>
+                <div>
+                    <li><i class="fas fa-users"></i> Salas para aulas coletivas</li>
+                    <li><i class="fas fa-spa"></i> Espaço para yoga e meditação</li>
+                </div>
+                <div>
+                    <li><i class="fas fa-shower"></i> Vestiários amplos e confortáveis</li>
+                    <li><i class="fas fa-parking"></i> Estacionamento gratuito</li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="tour-360">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1731781846433!6m8!1m7!1sCAoSLEFGMVFpcE5qbmJkQ29fUThrR0s5R0JJUzRRZ01hamMxNTBqTmtwblRRUktx!2m2!1d-20.40023941887092!2d-43.51260897875201!3f154.66435133200446!4f1.7663144292085207!5f0.4000000000000002"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="contact-header">
+        <h2>Entre em Contato</h2>
+        <p>Tire suas dúvidas ou agende uma aula experimental</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Localização</h3>
+                <p>Rua da Academia, 123 - Centro<br>São Paulo - SP</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda à Sexta: 6h às 23h<br>Sábado: 8h às 18h</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <h3>Telefone</h3>
+                <p>(11) 99999-9999<br>(11) 3333-3333</p>
+            </div>
+        </div>
+
+        <div class="contact-actions">
+            <a href="https://wa.me/5511999999999" class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Fale com um Consultor
+            </a>
+            <button class="primary-button schedule-button" (click)="scheduleClass()">
+                <i class="far fa-calendar-alt"></i>
+                Agende uma Aula Experimental
+            </button>
+        </div>
+    </div>
+</section>
+
+<button *ngIf="showScrollTop" class="scroll-top-btn" (click)="scrollToTop()">
+    ↑
+</button>
