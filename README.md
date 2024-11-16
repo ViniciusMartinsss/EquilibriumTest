@@ -1,27 +1,43 @@
-# equilibrium
+# Equilibrium - Academia de Fitness e Bem-estar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+![Logo da Equilibrium](link-para-sua-logo.png)
 
-## Development server
+## 📋 Sobre o Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A Equilibrium é uma academia moderna que oferece uma experiência completa de fitness e bem-estar. Nossa plataforma web apresenta todos os serviços e programas disponíveis, com foco em proporcionar uma jornada equilibrada entre saúde física e mental.
 
-## Code scaffolding
+### ✨ Principais Características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Design responsivo e moderno
+- Interface intuitiva e amigável
+- Integração com WhatsApp para atendimento
+- Tour virtual das instalações
+- Sistema de agendamento de aulas
 
-## Build
+## 🚀 Programas Oferecidos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- 💪 Musculação
+- 🏋️ CrossFit
+- 🧘‍♀️ Yoga
+- 🎯 Personal Training
+- 🏃‍♂️ Área de Cardio
+- 🧖‍♀️ Espaço Wellness
 
-## Running unit tests
+## 💻 Tecnologias Utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular 18.2.0
+- TypeScript
+- SCSS
+- Font Awesome 5.15.4
 
-## Running end-to-end tests
+## 🛠️ Instalação e Execução
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Pré-requisitos
 
-## Further help
+- Node.js (versão 16 ou superior)
+- NPM ou Yarn
+- Angular CLI (versão 18.2.12)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Instalação
+
+1. Clone o repositório
